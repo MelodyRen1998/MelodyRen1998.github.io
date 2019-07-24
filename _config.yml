@@ -1,7 +1,7 @@
 # Site settings
 title: Yimeng's Blog
 SEOTitle: 怡萌的博客 | Melody Blog
-header-img: img/post-bg-desk.jpg
+header-img: img/ruc-1.jpg
 email: melodyren_1998@hotmail.com
 description: "The Longest Day Has An End."
 keyword: "Yimeng, Yimeng Blog, 怡萌的博客, Melody"
@@ -12,7 +12,7 @@ github_repo: "https://github.com/MelodyRen1998/MelodyRen1998.github.io.git" # yo
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Love what you do."
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/renyimeng.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
