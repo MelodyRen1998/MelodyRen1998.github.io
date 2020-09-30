@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Mac使用Docker搭建ubuntu环境笔记
+title:      Mac使用Docker搭建ubuntu环境
 date:       2020-9-30
 author:     Yimeng Ren
 header-img: 
