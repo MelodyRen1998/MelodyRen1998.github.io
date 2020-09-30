@@ -13,7 +13,12 @@ tags:
 
 # Mac使用Docker搭建ubuntu环境笔记
 
-> 真的给我装吐了
+> 真的给我装吐了  
+主要参考资料：  
+1. [mac 下使用 Docker 搭建 ubuntu 环境
+](https://www.smslit.top/2018/12/20/docker_ubuntu_learn/)  
+2. [Linux Mac之间文件传输](https://developer.aliyun.com/article/7949)  
+3. [Mac下启动ssh服务](https://www.jianshu.com/p/52f01e967e22)
 
 对虚拟机和双系统不是很了解，本想着 MacOS 不需要装 Linux 虚拟机就可以完成大部分工作，谁知道老师让 MacOS 的同学也使用 Docker 安装一下 Ubuntu ，学习这个安装和使用的过程，以备日后工作中的需要。使用 Docker 搭建 Ubuntu 环境是不会污染 MacOS 的，同时还可以学习 Linux 的用法。除了安装 Ubuntu 环境，我还尝试了使用 Mac 中的 ssh 连接 Ubuntu 虚拟机，分享一下搭建环境的过程。
 
@@ -23,13 +28,13 @@ Most importantly, peace and love. :)
 
 ### 下载并安装 Docker
 
-1. 登录 [Docker 官网](https://hub.docker.com/) 下载安装包；
+- 登录 [Docker 官网](https://hub.docker.com/) 下载安装包；
 
-2. 按照 Mac 安装软件的流程，将安装好的 Docker 拖入 Application 文件夹中；
+- 按照 Mac 安装软件的流程，将安装好的 Docker 拖入 Application 文件夹中；
 
-3. 成功运行时，电脑顶部栏会出现一个小鲸鱼的 LOGO；
+- 成功运行时，电脑顶部栏会出现一个小鲸鱼的 LOGO；
 
-4. 如果安装成功，在终端运行版本查看的命令可以得到如下信息：
+- 如果安装成功，在终端运行版本查看的命令可以得到如下信息：
 
 ```
 (base) yimeng@localhost ~ %  docker --version
@@ -44,13 +49,13 @@ docker-machine version 0.14.0, build 89b8332
 
 由于国内直接访问 Docker 官方默认的镜像源比较慢，可以在 Docker desktop 中更换国内的镜像源进行加速。这里使用官方提供的一个镜像仓库地址：`https://registry.docker-cn.com`。
 
-1. 在顶栏中的小鲸鱼 logo 中打开 Preferences；
+- 在顶栏中的小鲸鱼 logo 中打开 Preferences；
 
-2. 选择 Docker Engine，修改配置文件（这里基于我安装的 Docker 来说，应该不同的界面修改方式是类似的）；
+- 选择 Docker Engine，修改配置文件（这里基于我安装的 Docker 来说，应该不同的界面修改方式是类似的）；
 
 ![docker_config](https://tva1.sinaimg.cn/large/007S8ZIlly1gj8gyb6r6nj318s0u0tnj.jpg)
 
-3. 给 `registry-mirrors` 参数设置国内镜像，点击 `Apply & Restart`（更多配置文件参数请参考 [Docker daemon configuration file](https://docs.docker.com/engine/reference/commandline/dockerd/)）。
+- 给 `registry-mirrors` 参数设置国内镜像，点击 `Apply & Restart`（更多配置文件参数请参考 [Docker daemon configuration file](https://docs.docker.com/engine/reference/commandline/dockerd/)）。
 
 ## 定制 Ubuntu 镜像
 
@@ -121,11 +126,11 @@ root@d5dd6461cd7a:/#
 
 登录到 ubuntu 的 bash 之后就可以当做正常的 ubuntu 使用了。
 
-1. 更新软件源信息：`apt-get update`；
+- 更新软件源信息：`apt-get update`；
 
-2. 首先安装 vim：`apt-get install vim`；
+- 首先安装 vim：`apt-get install vim`；
 
-3. 之所以先安装编辑工具，是为了可以编辑 `/etc/apt/sources.list`，更换为国内访问更快的软件源，比如可以将文件中的内容替换为如下阿里云的：
+- 之所以先安装编辑工具，是为了可以编辑 `/etc/apt/sources.list`，更换为国内访问更快的软件源，比如可以将文件中的内容替换为如下阿里云的：
 
 ```
 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
@@ -140,9 +145,9 @@ deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted univer
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
 ```
 
-4. 重新更新软件源信息：`apt-get update`，可以发现更新的速度明显加快；
+- 重新更新软件源信息：`apt-get update`，可以发现更新的速度明显加快；
 
-5. 安装 git 和 python3：`apt-get install git python3`；
+- 安装 git 和 python3：`apt-get install git python3`；
 
 ## 配置 SSH
 
@@ -174,41 +179,41 @@ AuthorizedKeysFile	.ssh/authorized_keys # 公钥信息保存到文件 .ssh/autho
 
 此时应当在 ubuntu 容器中，添加主机 Mac OS 的公钥。
 
-1. 在 HOME 路径下创建 .ssh 目录：`mkdir ~/.ssh`；
+- 在 HOME 路径下创建 .ssh 目录：`mkdir ~/.ssh`；
 
-2. 新建文件 `~/.ssh/authorized_keys`：`touch ~/.ssh/authorized_keys`；
+- 新建文件 `~/.ssh/authorized_keys`：`touch ~/.ssh/authorized_keys`；
 
-3. 新开一个 Mac OS terminal，运行命令 `cat ~/.ssh/id_rsa.pub`，复制打印的公钥信息；
+- 新开一个 Mac OS terminal，运行命令 `cat ~/.ssh/id_rsa.pub`，复制打印的公钥信息；
 
-4. 回到 ubuntu 容器中，将 3 中的公钥信息粘贴到 `~/.ssh/authorized_keys` 中保存。
+- 回到 ubuntu 容器中，将上一步中的公钥信息粘贴到 `~/.ssh/authorized_keys` 中保存。
 
 > 注意：如果主机没有公钥信息，需要先[生成 ssh 公钥](https://blog.csdn.net/iAilu/article/details/89790105?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param)。
 
-5. 此时完成了 ssh 访问支持的添加，退出容器。
+- 此时完成了 ssh 访问支持的添加，退出容器。
 
 ## 提交修改到镜像
 
 现在已经退出到 mac terminal 窗口，容器的修改并不会影响到源镜像，以上的步骤完成了 ubuntu 的基本配置，并且添加了 ssh 支持，这一步是产生新的镜像版本。
 
-1. 查看刚才操作的容器信息，运行命令 `docker ps -a`，可以看到 mineos 的状态是退出（exited）的，复制 mineos 的 `CONTAINER ID`，比如为 `d5dd6461cd7a`；
+- 查看刚才操作的容器信息，运行命令 `docker ps -a`，可以看到 mineos 的状态是退出（exited）的，复制 mineos 的 `CONTAINER ID`，比如为 `d5dd6461cd7a`；
 
-2. 运行命令提交产生 ubuntu 新版本的镜像：
+- 运行命令提交产生 ubuntu 新版本的镜像：
 
 ```
 docker commit -m 'add ssh' -a '5km' d5dd6461cd7a ubuntu-ssh
 ```
 
-- -m，指定提交信息
+1. -m，指定提交信息
 
-- -a，指定提交者
+2. -a，指定提交者
 
-- 你需要把 d5dd6461cd7a 替换为您的容器的 CONTAINER ID
+3. 你需要把 d5dd6461cd7a 替换为您的容器的 CONTAINER ID
 
-- ubuntu-ssh 是新镜像的名称，可以随意指定
+4. ubuntu-ssh 是新镜像的名称，可以随意指定
 
-3. 使用命令 `docker image ls` 可以查看当前安装的镜像，上述操作正常的话就会看到 `ubuntu-ssh` 的镜像信息；
+- 使用命令 `docker image ls` 可以查看当前安装的镜像，上述操作正常的话就会看到 `ubuntu-ssh` 的镜像信息；
 
-4. 此时之前创建的容器就没用了，可以通过命令 `docker rm mineos` 进行删除。
+- 此时之前创建的容器就没用了，可以通过命令 `docker rm mineos` 进行删除。
 
 ## 最终的 Ubuntu 容器
 
