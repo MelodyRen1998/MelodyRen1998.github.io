@@ -13,7 +13,8 @@ tags:
 
 # Mac使用Docker搭建ubuntu环境笔记
 
-> 真的给我装吐了  
+> 真的给我装吐了。
+
 主要参考资料：  
 1. [mac 下使用 Docker 搭建 ubuntu 环境
 ](https://www.smslit.top/2018/12/20/docker_ubuntu_learn/)  
