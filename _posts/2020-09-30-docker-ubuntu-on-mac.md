@@ -11,8 +11,6 @@ tags:
     - Linux
 ---
 
-# Mac使用Docker搭建ubuntu环境笔记
-
 > 真的给我装吐了。
 
 主要参考资料：  
