@@ -19,11 +19,13 @@ tags:
 
 ## Neuron Structure
 
-\begin{align*}
-  z &= \sum_{i=1}^{d} w_{i} x_{i}+b \\
-    &= w^{T} x+b \\
-  a &= f(z)
-\end{align*}
+$$
+\begin{aligned}
+z &=\sum_{i=1}^{d} w_{i} x_{i}+b \\
+&=w^{T} x+b \\
+a &=f(z)
+\end{aligned}
+$$
 
 - 其中，`$w=[w_1, w_2, ...,w_d] \in \mathbb{R}^d$` 是d维的权重向量，`$b \in \mathbb{R}$` 是偏置。
 
@@ -36,9 +38,11 @@ tags:
 - 两端饱和
 - Logistic Function
 
+$$
 \begin{align*}
   \sigma(x)=\frac{1}{1+\exp (-x)}
 \end{align*}
+$$
 
 - Tanh Function
 
