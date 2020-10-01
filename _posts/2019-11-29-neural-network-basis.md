@@ -19,13 +19,13 @@ tags:
 
 ## Neuron Structure
 
-$$
+\begin{equation}
 \begin{aligned}
 z &=\sum_{i=1}^{d} w_{i} x_{i}+b \\
 &=w^{T} x+b \\
 a &=f(z)
 \end{aligned}
-$$
+\end{equation}
 
 - 其中，`$w=[w_1, w_2, ...,w_d] \in \mathbb{R}^d$` 是d维的权重向量，`$b \in \mathbb{R}$` 是偏置。
 
@@ -38,17 +38,15 @@ $$
 - 两端饱和
 - Logistic Function
 
-$$
-\begin{align*}
-  \sigma(x)=\frac{1}{1+\exp (-x)}
-\end{align*}
-$$
+\begin{equation}
+\sigma(x)=\frac{1}{1+\exp (-x)}
+\end{equation}
 
 - Tanh Function
 
-\begin{align*}
-  \tanh (x)=\frac{\exp (x)-\exp (-x)}{\exp (x)+\exp (-x)}
-\end{align*}
+\begin{equation}
+\tanh (x)=\frac{\exp (x)-\exp (-x)}{\exp (x)+\exp (-x)}
+\end{equation}
 
 - Tanh可以看作是放大并平移的Logistic，值域为 (-1,1)。
 
@@ -65,15 +63,25 @@ $$
 - `$exp()$` 的求导计算量较大
 - 对Logistic函数在0附近做一阶泰勒展开
 
-\begin{align*} 
-g_{l}(x) & \approx \sigma(0)+x \times \sigma^{\prime}(0) \\ &=0.25 x+0.5 
-\end{align*}
+\begin{equation}
+\begin{aligned}
+g_{l}(x) & \approx \sigma(0)+x \times \sigma^{\prime}(0) \\
+&=0.25 x+0.5
+\end{aligned}
+\end{equation}
 
 - 此时可以用分段函数 `$hard-logistic(x)$` 来近似：
 
-\begin{align*} 
-hard-logistic(x) &=\left\{\begin{array}{ll}{1} & {g_{l}(x) \geq 1} \\ {g_{l}} & {0<g_{l}(x)<1}\end{array}\right.\\ &=\max \left(\min \left(g_{l}(x), 1\right), 0\right) \\ &=\max (\min (0.25 x+0.5,1), 0) 
-\end{align*}
+\begin{equation}
+\begin{aligned}
+\operatorname{hard}-\operatorname{logistic}(x) &=\left\{\begin{array}{ll}
+1 & g_{l}(x) \geq 1 \\
+g_{l} & 0<g_{l}(x)<1
+\end{array}\right.\\
+&=\max \left(\min \left(g_{l}(x), 1\right), 0\right) \\
+&=\max (\min (0.25 x+0.5,1), 0)
+\end{aligned}
+\end{equation}
 
 ## Hard Sigmoid
 
@@ -84,10 +92,16 @@ hard-logistic(x) &=\left\{\begin{array}{ll}{1} & {g_{l}(x) \geq 1} \\ {g_{l}} & 
 - 比Sigmoid函数具有更好的稀疏性，大约50%的神经元处于激活状态
 - `$x>0$`时导数为1，一定程度缓解梯度消失问题
 
-\begin{align*} 
-\operatorname{ReLU}(x) &=\left\{\begin{array}{ll}{x} & {x \geq 0} \\ {0} & {x<0}\end{array}\right.\\ &=\max (0, x) \\
+\begin{equation}
+\begin{aligned}
+\operatorname{ReLU}(x) &=\left\{\begin{array}{ll}
+x & x \geq 0 \\
+0 & x<0
+\end{array}\right.\\
+&=\max (0, x) \\
 \Delta_{x} \operatorname{ReLU}(x) &=1(x>0)
-\end{align*}
+\end{aligned}
+\end{equation}
 
 - **Dying ReLU Problem**: 如果某种情况下（e.g. 大的梯度更新导致ReLU的输入小于0），部分输入`$W$`经过ReLU函数能得到一个0（ReLU is close），那么反向传播时，`$W$`一般都不能通过反向传播得到更新。
 
@@ -130,10 +144,12 @@ hard-logistic(x) &=\left\{\begin{array}{ll}{1} & {g_{l}(x) \geq 1} \\ {g_{l}} & 
 
 ## Feedforward Neural Network (FNN)
 
-\begin{align*} 
-  \boldsymbol{a}^{(l)} &=f_{l}\left(\boldsymbol{z}^{(l)}\right) = f_{l} \left(W^{(l)} \cdot \boldsymbol{a}^{(l-1)}+\boldsymbol{b}^{(l)}\right) \\
-  \boldsymbol{x} &=\boldsymbol{a}^{(0)} \rightarrow \boldsymbol{z}^{(1)} \rightarrow \boldsymbol{a}^{(1)} \rightarrow \boldsymbol{z}^{(2)} \rightarrow \cdots \rightarrow \boldsymbol{a}^{(L-1)} \rightarrow \boldsymbol{z}^{(L)} \rightarrow \boldsymbol{a}^{(L)}=\phi(\boldsymbol{x} ; W, \boldsymbol{b})
-\end{align*}
+\begin{equation}
+\begin{aligned}
+a^{(l)} &=f_{l}\left(z^{(l)}\right)=f_{l}\left(W^{(l)} \cdot a^{(l-1)}+b^{(l)}\right) \\
+x &=a^{(0)} \rightarrow z^{(1)} \rightarrow a^{(1)} \rightarrow z^{(2)} \rightarrow \cdots \rightarrow a^{(L-1)} \rightarrow z^{(L)} \rightarrow a^{(L)}=\phi(x ; W, b)
+\end{aligned}
+\end{equation}
 
 ![多层前馈神经网络](https://tva1.sinaimg.cn/large/007S8ZIlly1gj9yij5ckwj30xf0h3tej.jpg)
 
@@ -159,46 +175,56 @@ hard-logistic(x) &=\left\{\begin{array}{ll}{1} & {g_{l}(x) \geq 1} \\ {g_{l}} & 
 
 - 如果使用交叉熵损失函数，对于样本 $(x,y)$，其损失函数为：
 
-\begin{align*}
-\mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}}) &=-\boldsymbol{y}^{\mathrm{T}} \log \hat{\boldsymbol{y}} \\
-\mathcal{R}(W, \boldsymbol{b}) &=\frac{1}{N} \sum_{n=1}^{N} \mathcal{L}\left(\boldsymbol{y}^{(n)}, \hat{\boldsymbol{y}}^{(n)}\right)+\frac{1}{2} \lambda\|W\|_{F}^{2} \\
+\begin{equation}
+\begin{aligned}
+\mathcal{L}(y, \hat{y}) &=-y^{\mathrm{T}} \log \hat{y} \\
+\mathcal{R}(W, b) &=\frac{1}{N} \sum_{n=1}^{N} \mathcal{L}\left(y^{(n)}, \hat{y}^{(n)}\right)+\frac{1}{2} \lambda\|W\|_{F}^{2} \\
 \|W\|_{F}^{2} &=\sum_{l=1}^{L} \sum_{i=1}^{m^{(l)}} \sum_{j=1}^{m^{(l-1)}}\left(w_{i j}^{(l)}\right)^{2}
-\end{align*}
+\end{aligned}
+\end{equation}
 
 ## Gradiant Descend
 
-\begin{align*} 
-W^{(l)} & \leftarrow W^{(l)}-\alpha \frac{\partial \mathcal{R}(W, \boldsymbol{b})}{\partial W^{(l)}} \\ &=W^{(l)}-\alpha\left(\frac{1}{N} \sum_{n=1}^{N}\left(\frac{\partial \mathcal{L}\left(\boldsymbol{y}^{(n)}, \hat{\boldsymbol{y}}^{(n)}\right)}{\partial W^{(l)}}\right)+\lambda W^{(l)}\right) \\
-\boldsymbol{b}^{(l)} & \leftarrow \boldsymbol{b}^{(l)}-\alpha \frac{\partial \mathcal{R}(W, \boldsymbol{b})}{\partial \boldsymbol{b}^{(l)}} \\ &=\boldsymbol{b}^{(l)}-\alpha\left(\frac{1}{N} \sum_{n=1}^{N} \frac{\partial \mathcal{L}\left(\boldsymbol{y}^{(n)}, \hat{\boldsymbol{y}}^{(n)}\right)}{\partial \boldsymbol{b}^{(l)}}\right)
-\end{align*}
+\begin{equation}
+\begin{aligned}
+W^{(l)} & \leftarrow W^{(l)}-\alpha \frac{\partial \mathcal{R}(W, b)}{\partial W^{(l)}} \\
+&=W^{(l)}-\alpha\left(\frac{1}{N} \sum_{n=1}^{N}\left(\frac{\partial \mathcal{L}\left(y^{(n)}, \hat{y}^{(n)}\right)}{\partial W^{(l)}}\right)+\lambda W^{(l)}\right) \\
+b^{(l)} & \leftarrow b^{(l)}-\alpha \frac{\partial \mathcal{R}(W, b)}{\partial b^{(l)}} \\
+&=b^{(l)}-\alpha\left(\frac{1}{N} \sum_{n=1}^{N} \frac{\partial \mathcal{L}\left(y^{(n)}, \hat{y}^{(n)}\right)}{\partial b^{(l)}}\right)
+\end{aligned}
+\end{equation}
 
 ## Gradiant Descend
 
 - 对第$l$层中的参数$W^{(l)}$ 和$b^{(l)}$ 计算偏导数：
 
-\begin{align*}
-\frac{\partial \mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}})}{\partial w_{i j}^{(l)}}=\frac{\partial \boldsymbol{z}^{(l)}}{\partial w_{i j}^{(l)}} \frac{\partial \mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}})}{\partial \boldsymbol{z}^{(l)}} \\
-\frac{\partial \mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}})}{\partial \boldsymbol{b}^{(l)}}=\frac{\partial \boldsymbol{z}^{(l)}}{\partial \boldsymbol{b}^{(l)}} \frac{\partial \mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}})}{\partial \boldsymbol{z}^{(l)}}
-\end{align*}
+\begin{equation}
+\begin{aligned}
+\frac{\partial \mathcal{L}(y, \hat{y})}{\partial w_{i j}^{(l)}} &=\frac{\partial z^{(l)}}{\partial w_{i j}^{(l)}} \frac{\partial \mathcal{L}(y, \hat{y})}{\partial z^{(l)}} \\
+\frac{\partial \mathcal{L}(y, \hat{y})}{\partial b^{(l)}} &=\frac{\partial z^{(l)}}{\partial b^{(l)}} \frac{\partial \mathcal{L}(y, \hat{y})}{\partial z^{(l)}}
+\end{aligned}
+\end{equation}
 
 ## Partial Derivative 1
 
 - 计算偏导数`$\frac{\partial z^{(l)}}{\partial w_{ij}^{(l)}}$，因为$z^{(l)}=W^{(l)}a^{(l-1)}+b^{(l)}$`，偏导数
 
-\begin{align*} 
-\frac{\partial \boldsymbol{z}^{(l)}}{\partial w_{i j}^{(l)}} &=\left[\frac{\partial z_{1}^{(l)}}{\partial w_{i j}^{(l)}}, \cdots, \frac{\partial z_{i}^{(l)}}{\partial w_{i j}^{(l)}}, \cdots, \frac{\partial z_{m^{(l)}}^{(l)}}{\partial w_{i j}^{(l)}}\right] \\ 
-&=\left[0, \cdots, \quad \frac{\partial\left(\boldsymbol{w}_{i:}^{(l)} \boldsymbol{a}^{(l-1)}+b_{i}^{(l)}\right)}{\partial w_{i j}^{(l)}}, \cdots, 0\right] \\ 
+\begin{equation}
+\begin{aligned}
+\frac{\partial z^{(l)}}{\partial w_{i j}^{(l)}} &=\left[\frac{\partial z_{1}^{(l)}}{\partial w_{i j}^{(l)}}, \cdots, \frac{\partial z_{i}^{(l)}}{\partial w_{i j}^{(l)}}, \cdots, \frac{\partial z_{m^{(l)}}^{(l)}}{\partial w_{i j}^{(l)}}\right] \\
+&=\left[0, \cdots, \frac{\partial\left(w_{i}^{(l)} a^{(l-1)}+b_{i}^{(l)}\right)}{\partial w_{i j}^{(l)}}, \cdots, 0\right] \\
 &=\left[0, \cdots, a_{j}^{(l-1)}, \cdots, 0\right] \\
-&\triangleq \mathbb{I}_{i}\left(a_{j}^{(l-1)}\right) \quad \in \mathbb{R}^{m^{(l)}}
-\end{align*}
+& \triangleq \mathbb{l}_{i}\left(a_{j}^{(l-1)}\right) \in \mathbb{R}^{m^{(l)}}
+\end{aligned}
+\end{equation}
 
 ## Partial Derivative 2
 
 - 计算偏导数`$\frac{\partial z^{(l)}}{\partial b^{(l)}}$，因为$z^{(l)}=W^{(l)}a^{(l-1)}+b^{(l)}$`，偏导数
 
-\begin{align*}
-\frac{\partial \boldsymbol{z}^{(l)}}{\partial \boldsymbol{b}^{(l)}}=\boldsymbol{I}_{m^{(l)}} \quad \in \mathbb{R}^{m^{(l)} \times m^{(l)}}
-\end{align*}
+\begin{equation}
+\frac{\partial z^{(l)}}{\partial b^{(l)}}=I_{m^{(l)}} \in \mathbb{R}^{m^{(l)} \times m^{(l)}}
+\end{equation}
 
 - 求导结果为`$m^{(l)}*m^{(l)}$`的单位矩阵。
 
@@ -212,19 +238,27 @@ W^{(l)} & \leftarrow W^{(l)}-\alpha \frac{\partial \mathcal{R}(W, \boldsymbol{b}
 
 - 根据$\boldsymbol{a}^{(l)}=f_{l}\left(\boldsymbol{z}^{(l)}\right)$，其中$f_{l}(\centerdot)$按照位来计算，因此有
 
-\begin{align*} 
-\frac{\partial \boldsymbol{a}^{(l)}}{\partial \boldsymbol{z}^{(l)}} &=\frac{\partial f_{l}\left(\boldsymbol{z}^{(l)}\right)}{\partial \boldsymbol{z}^{(l)}} \\ &=\operatorname{diag}\left(f_{l}^{\prime}\left(\boldsymbol{z}^{(l)}\right)\right) 
-\end{align*}
+\begin{equation}
+\begin{aligned}
+\frac{\partial a^{(l)}}{\partial z^{(l)}} &=\frac{\partial f_{l}\left(z^{(l)}\right)}{\partial z^{(l)}} \\
+&=\operatorname{diag}\left(f_{l}^{\prime}\left(z^{(l)}\right)\right)
+\end{aligned}
+\end{equation}
 
 ## Partial Derivative 3
 
 - 根据链式法则，第`$l$`层的误差项为
 
-\begin{align*} 
-\delta^{(l)} & \triangleq \frac{\partial \mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}})}{\partial \boldsymbol{z}^{(l)}} \\ &=\frac{\partial \boldsymbol{a}^{(l)}}{\partial \boldsymbol{z}^{(l)}} \cdot \frac{\partial \boldsymbol{z}^{(l+1)}}{\partial \boldsymbol{a}^{(l)}} \cdot \frac{\partial \mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}})}{\partial \boldsymbol{z}^{(l+1)}} \\
-&=\operatorname{diag}\left(f_{l}^{\prime}\left(z^{(l)}\right)\right) \cdot\left(W^{(l+1)}\right)^{\mathrm{T}} \cdot \delta^{(l+1)} \\ 
-&=f_{l}^{\prime}\left(z^{(l)}\right) \odot\left(\left(W^{(l+1)}\right)^{\mathrm{T}} \delta^{(l+1)}\right)
-\end{align*}
+\begin{equation}
+\begin{aligned}
+\delta^{(l)} & \triangleq \frac{\partial \mathcal{L}(y, \hat{y})}{\partial z^{(l)}} \\
+&=\frac{\partial a^{(l)}}{\partial z^{(l)}} \cdot \frac{\partial z^{(l+1)}}{\partial a^{(l)}} \cdot \frac{\partial \mathcal{L}(y, \hat{y})}{\partial z^{(l+1)}} \\
+&=\operatorname{diag}\left(f_{l}^{\prime}\left(z^{(l)}\right)\right) \cdot\left(\begin{array}{l}
+\left.W^{(l+1)}\right)^{\mathrm{T}} \cdot \delta^{(l+1)} \\
+& =f_{l}^{\prime}\left(z^{(l)}\right) \odot\left(\left(W^{(l+1)}\right)^{\mathrm{T}} \delta^{(l+1)}\right)
+\end{array}\right.
+\end{aligned}
+\end{equation}
 
 - 其中`$\odot$`是向量的点积运算符，表示每个元素相乘；
 
@@ -234,29 +268,33 @@ W^{(l)} & \leftarrow W^{(l)}-\alpha \frac{\partial \mathcal{R}(W, \boldsymbol{b}
 
 - 计算出上面三个偏导数之后，损失函数对一个权重`$w_{ij}^{(l)}$`的梯度就可以写成
 
-\begin{align*} 
-\frac{\partial \mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}})}{\partial w_{i j}^{(l)}} &=\mathbb{I}_{i}\left(a_{j}^{(l-1)}\right) \delta^{(l)} \\ &=\left[0, \cdots, a_{j}^{(l-1)}, \cdots, 0\right]\left[\delta_{1}^{(l)}, \cdots, \delta_{i}^{(l)}, \cdots, \delta_{m^{(l)}}^{(l)}\right]^{\mathrm{T}} \\ &=\delta_{i}^{(l)} a_{j}^{(l-1)} 
-\end{align*}
+\begin{equation}
+\begin{aligned}
+\frac{\partial \mathcal{L}(y, \hat{y})}{\partial w_{i j}^{(l)}} &=\mathbb{0}_{i}\left(a_{j}^{(l-1)}\right) \delta^{(l)} \\
+&=\left[0, \cdots, a_{j}^{(l-1)}, \cdots, 0\right]\left[\delta_{1}^{(l)}, \cdots, \delta_{i}^{(l)}, \cdots, \delta_{m^{(l)}}^{(l)}\right]^{\mathrm{T}} \\
+&=\delta_{i}^{(l)} a_{j}^{(l-1)}
+\end{aligned}
+\end{equation}
 
 - 其中$\delta_{i}^{(l)} a_{j}^{(l-1)}$相当于向量$\delta_{i}^{(l)}$和向量$a_{j}^{(l-1)}$的**外积**的第{i,j}个元素，因此上式进一步写成
 
-\begin{align*}
-\left[\frac{\partial \mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}})}{\partial W^{(l)}}\right]_{i j}=\left[\delta^{(l)}\left(\boldsymbol{a}^{(l-1)}\right)^{\mathrm{T}}\right]_{i j}
-\end{align*}
+\begin{equation}
+\left[\frac{\partial \mathcal{L}(y, \hat{y})}{\partial W^{(l)}}\right]_{i j}=\left[\delta^{(l)}\left(a^{(l-1)}\right)^{\mathrm{T}}\right]_{i j}
+\end{equation}
 
 ## Gradient
 
 - $\mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}})$关于第$l$层权重$W^{(l)}$的梯度为：
 
-\begin{align*}
-\frac{\partial \mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}})}{\partial W^{(l)}}=\delta^{(l)}\left(\boldsymbol{a}^{(l-1)}\right)^{\mathrm{T}}
-\end{align*}
+\begin{equation}
+\frac{\partial \mathcal{L}(y, \hat{y})}{\partial W^{(l)}}=\delta^{(l)}\left(a^{(l-1)}\right)^{\mathrm{T}}
+\end{equation}
 
 - $\mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}})$关于第$l$层偏移项$b^{(l)}$的梯度为：
 
-\begin{align*}
-\frac{\partial \mathcal{L}(\boldsymbol{y}, \hat{\boldsymbol{y}})}{\partial \boldsymbol{b}^{(l)}}=\delta^{(l)}
-\end{align*}
+\begin{equation}
+\frac{\partial \mathcal{L}(y, \hat{y})}{\partial b^{(l)}}=\delta^{(l)}
+\end{equation}
 
 ## Back Propagation
 
@@ -279,9 +317,9 @@ W^{(l)} & \leftarrow W^{(l)}-\alpha \frac{\partial \mathcal{R}(W, \boldsymbol{b}
 
 - 在每次参数更新时，引入一个衰减系数
 
-\begin{align*}
+\begin{equation}
 \theta_{t} \leftarrow(1-w) \theta_{t-1}-\alpha \mathbf{g}_{t}
-\end{align*}
+\end{equation}
 
 - 在标准的随机梯度下降中，权重衰减正则化和$l2$正则化的效果相同。因此，权重衰减在一些深度学习框架中通过$l2$正则化来实现。但是，在较为复杂的优化方法（比如Adam）中，权重衰减和$l2$正则化并不等价^[@DBLP:journals/corr/abs-1711-05101]。
 
@@ -295,9 +333,12 @@ W^{(l)} & \leftarrow W^{(l)}-\alpha \frac{\partial \mathcal{R}(W, \boldsymbol{b}
 - 当训练一个深度神经网络时，我们可以随机丢弃一部分神经元（同时丢弃 其对应的连接边）来避免过拟合^[@srivastava2014dropout; @wan2013regularization]。
 - 对于一个神经层$y = f(Wx + b)$，我们可以引入一个丢弃函数$d(·)$，使得$y = f(Wd(x)+ b)$。丢弃函数$d(·)$的定义为 
 
-\begin{align*}
-\operatorname{d}(\boldsymbol{x})=\left\{\begin{array}{ll}{\boldsymbol{m} \odot \boldsymbol{x}} & {\text { Training Set }} \\ {p \boldsymbol{x}} & {\text { Test Set }}\end{array}\right.
-\end{align*}
+\begin{equation}
+\mathrm{d}(x)=\left\{\begin{array}{ll}
+m \odot x & \text { Training Set } \\
+p x & \text { Test Set }
+\end{array}\right.
+\end{equation}
 
 - 其中`$m \in \{0,1\}^d$`是丢弃掩码（Dropout Mask），通过以概率为$p$的伯努利分布随机生成。
 
@@ -318,9 +359,9 @@ W^{(l)} & \leftarrow W^{(l)}-\alpha \frac{\partial \mathcal{R}(W, \boldsymbol{b}
 - 贝叶斯学习角度^[@gal2016dropout]
   - 贝叶斯学习是假设参数`$\theta$`为随机向量，并且先验分布为`$q(\theta)$`，贝叶斯方法的预测为 
 
-\begin{align*} 
-\mathbb{E}_{q(\theta)}[y] &=\int_{q} f(\boldsymbol{x} ; \theta) q(\theta) d \theta \approx \frac{1}{M} \sum_{m=1}^{M} f\left(\boldsymbol{x}, \theta_{m}\right) 
-\end{align*}
+\begin{equation}
+\mathbb{E}_{q(\theta)}[y]=\int_{q} f(x ; \theta) q(\theta) d \theta \approx \frac{1}{M} \sum_{m=1}^{M} f\left(x, \theta_{m}\right)
+\end{equation}
 
 - 其中$f(x,\theta_m)$为第$m$次应用丢弃方法后的网络，其参数$\theta_m$为对全部参数$\theta$的一次采样。
 
