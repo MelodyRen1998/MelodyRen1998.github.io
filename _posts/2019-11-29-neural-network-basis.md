@@ -19,7 +19,6 @@ tags:
 
 ![典型神经元结构](https://tva1.sinaimg.cn/large/007S8ZIlly1gj9yf788rcj30pa0hdwgb.jpg)
 
----
 
 ## Neuron Structure
 
