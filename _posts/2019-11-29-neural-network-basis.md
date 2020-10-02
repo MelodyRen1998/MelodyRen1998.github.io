@@ -11,6 +11,10 @@ tags:
     - Neural Network
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+
+
 ## Neuron Structure
 
 ![典型神经元结构](https://tva1.sinaimg.cn/large/007S8ZIlly1gj9yf788rcj30pa0hdwgb.jpg)
