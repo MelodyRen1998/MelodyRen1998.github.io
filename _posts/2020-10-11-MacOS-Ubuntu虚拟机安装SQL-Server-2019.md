@@ -23,7 +23,7 @@ tags:
   - Ubuntu: 20.04
  
  
- ## 需要解决的问题（TODO）
+**TODO LIST**
 
 - [ ] SQL Server 2019 on docker: 如何导入外部数据或通过外部连接这个服务器
 - [ ] SQL Server 2019 on ubuntu via MAC terminal: 在配置SQL时遇到`system has notbeen booted with systemd as init system (PID 1)`的问题，暂时没有解决，导致无法继续连接数据库
