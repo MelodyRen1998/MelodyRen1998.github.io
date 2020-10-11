@@ -12,6 +12,8 @@ tags:
     
 ---
 
+## 前言
+
 - 参考链接
   - [Quickstart: Install SQL Server and create a database on Ubuntu](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15)
   - [Install tools on Ubuntu 16.04](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-setup-tools?view=sql-server-ver15#ubuntu)
@@ -19,11 +21,12 @@ tags:
 
 - 版本说明
   - Ubuntu: 20.04
-  
- ## TODO LIST
+ 
+ 
+ ## 需要解决的问题（TODO）
 
-[ ] SQL Server 2019 on docker: 如何导入外部数据或通过外部连接这个服务器
-[ ] SQL Server 2019 on ubuntu via MAC terminal: 在配置SQL时遇到`system has notbeen booted with systemd as init system (PID 1)`的问题，暂时没有解决，导致无法继续连接数据库
+- [ ] SQL Server 2019 on docker: 如何导入外部数据或通过外部连接这个服务器
+- [ ] SQL Server 2019 on ubuntu via MAC terminal: 在配置SQL时遇到`system has notbeen booted with systemd as init system (PID 1)`的问题，暂时没有解决，导致无法继续连接数据库
 
 ![Screen Shot 2020-10-10 at 7.11.29 PM](https://tva1.sinaimg.cn/large/007S8ZIlly1gjlro6uw3aj30x2076ae8.jpg)
 
