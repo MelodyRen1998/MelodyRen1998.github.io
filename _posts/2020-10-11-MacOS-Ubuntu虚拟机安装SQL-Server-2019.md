@@ -9,7 +9,7 @@ catalog: true
 tags:
     - Ubuntu
     - SQL
-    - MacOS
+    
 ---
 
 - 参考链接
@@ -20,13 +20,12 @@ tags:
 - 版本说明
   - Ubuntu: 20.04
   
- ## TODO
+ ## TODO LIST
 
-- [ ] SQL Server 2019 on docker: 如何导入外部数据或通过外部连接这个服务器
-- [ ] SQL Server 2019 on ubuntu via MAC terminal: 在配置SQL时遇到`system has notbeen booted with systemd as init system (PID 1)`的问题，暂时没有解决，导致无法继续连接数据库
+[ ] SQL Server 2019 on docker: 如何导入外部数据或通过外部连接这个服务器
+[ ] SQL Server 2019 on ubuntu via MAC terminal: 在配置SQL时遇到`system has notbeen booted with systemd as init system (PID 1)`的问题，暂时没有解决，导致无法继续连接数据库
 
 ![Screen Shot 2020-10-10 at 7.11.29 PM](https://tva1.sinaimg.cn/large/007S8ZIlly1gjlro6uw3aj30x2076ae8.jpg)
-
 
 
 ## 更换安装镜像源
@@ -65,13 +64,13 @@ sudo vim /etc/apt/sources.list
 
 在Ubuntu Terminal运行一下命令安装 mssql-server 包：
 
-1. 导入公共存储库 GPG 密钥：
+- 导入公共存储库 GPG 密钥：
 
 ```bash
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 ```
 
-2. 为 SQL Server 2019 注册 Microsoft SQL Server Ubuntu 存储库：
+- 为 SQL Server 2019 注册 Microsoft SQL Server Ubuntu 存储库：
 
 ```bash
 sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/18.04/mssql-server-2019.list)"
@@ -79,14 +78,14 @@ sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubunt
 
 **注意**：这里不需要更换 `ubuntu/20.04/` ，仍然使用 `ubuntu/18.04/`即可。
 
-3. 运行以下命令以安装 SQL Server：
+- 运行以下命令以安装 SQL Server：
 
 ```bash
 sudo apt-get update
 sudo apt-get install -y mssql-server
 ```
 
-4. 包安装完成后，运行 `mssql-conf setup`，按照提示设置 SA 密码并选择版本：
+- 包安装完成后，运行 `mssql-conf setup`，按照提示设置 SA 密码并选择版本：
 
 ```bash
 renyimeng@renyimeng-virtual-machine:~$ sudo /opt/mssql/bin/mssql-conf setup
@@ -130,7 +129,7 @@ Setup has completed successfully. SQL Server is now starting.
 
 **注意**：SA密码设置规则最少 8 个字符，包括大写和小写字母、十进制数字和/或非字母数字符号。
 
-5. 完成配置后，验证服务是否正在运行：
+- 完成配置后，验证服务是否正在运行：
 
 ```bash
 systemctl status mssql-server --no-pager
