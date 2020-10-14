@@ -659,7 +659,6 @@ Connection to slave1 closed.
     Missing blocks: 0
     Missing blocks (with replication factor 1): 0
     
-    -------------------------------------------------
     Live datanodes (2):
     
     Name: 172.17.0.4:50010 (Slave2)
@@ -679,7 +678,6 @@ Connection to slave1 closed.
     Xceivers: 1
     Last contact: Wed Oct 14 14:51:21 UTC 2020
     
-    
     Name: 172.17.0.3:50010 (Slave1)
     Hostname: Slave1
     Decommission Status : Normal
@@ -696,7 +694,6 @@ Connection to slave1 closed.
     Cache Remaining%: 0.00%
     Xceivers: 1
     Last contact: Wed Oct 14 14:51:21 UTC 2020
-    
     
     [root@Master sbin]# 
     ```
