@@ -236,11 +236,17 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0P4iS91BK9KuHoupZFTnzNi0iz9LxSvCU/JkAceI5
 
 ```shell
 Port 22
+
 PermitRootLogin yes
+
 PubkeyAuthentication yes
+
 PasswordAuthentication yes
+
 ChallengeResponseAuthentication no
+
 UsePAM yes
+
 PrintLastLog no
 ```
 
@@ -258,14 +264,13 @@ StrictHostKeyChecking no
 
 改完之后同样敲上 Esc 键，进入命令模式， 再敲上指令 `:wq`  退出这个编辑文件界面，回到 Master 容器界面。
 
-这时候按下`Ctrl+P+Q`，返回到初始目录，查看此时三个容器的ip地址，输入命令： `sudo docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -aq)` 如下：
+这时候按下`Ctrl+P+Q`，返回到初始目录，查看此时三个容器的ip地址，输入命令： `sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(sudo docker ps -aq)` 如下：
 
 ```bash
-renyimeng@renyimeng-virtual-machine:~$ docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -aq) 
+renyimeng@renyimeng-virtual-machine:~$ sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(sudo docker ps -aq) 
 /Slave2 - 172.17.0.4
 /Slave1 - 172.17.0.3
 /Master - 172.17.0.2
-/admiring_carson - 
 ```
 
 然后进入 Master 容器 (指令是 `sudo docker attach Master` )，打开 `/etc/hosts` 文件，把上述内容填上，目的是给每个节点的 ip 附上名字，ssh 连接的时候就可以直接 `ssh Slave1`，而不是 `ssh 172.17.0.3` 这么麻烦了，所以，我们再次进入Master 容器 ，编辑 /etc/hosts 文件，所以敲上指令 `vim /etc/hosts`  ，进入编辑模式，将容器名及其对应的 ip 填入 ，修改完之后回到Master 容器：
