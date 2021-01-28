@@ -8,7 +8,8 @@ catalog: true
 tags:
     - Data Mining
     - Lecture Notes
-	- Renmin University of China
+    - Renmin University of China
+    
 ---
 
 ## LASSO问题的求解
@@ -17,5 +18,6 @@ tags:
 - 单变量求解
 - 多变量循环坐标下降
 
-[LASSO问题的求解.pdf]()
+[LASSO问题的求解.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/LASSO.pdf)
 
+## 待补充
