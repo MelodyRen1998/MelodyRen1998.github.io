@@ -18,6 +18,108 @@ tags:
 - 单变量求解
 - 多变量循环坐标下降
 
-[LASSO问题的求解.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/LASSO.pdf)
+课堂笔记：[LASSO问题的求解.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/LASSO.pdf)
 
-## 待补充
+参考资料：[Lasso: Algorithms and Extensions - Yuxin Chen, Princeton University](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/lasso_algorithm_extension.pdf)
+
+## 凸优化和KKT条件
+
+- 凸集和凸函数
+- Lagrange 对偶
+- 最优性条件
+
+课堂笔记：[凸优化和KKT条件.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/KKT.pdf)
+
+## 梯度下降方法
+
+- 次梯度与次微分
+- 无约束优化问题
+- 下降方法
+  - 回溯直线搜索(backtracking rule)
+  - 投影梯度下降(Projected Gradient Method)
+  - 近端梯度下降法 (proximal gradient descent)
+    - 以LASSO为例
+  - 加速梯度下降(Nesterov Accelerated Gradient)
+  - 交替方向乘子法(Alternating Direction Method of Multipliers, ADMM)
+    - ADMM求解LASSO问题
+
+课堂笔记：[梯度下降方法.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/GradiantDescent.pdf)
+
+参考资料：
+
+[Lecture 6: Subgradient Method, September 13, Fall 2012, CMU](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/CMU_Lecture6_subgrad.pdf)
+
+[Proximal Gradient Descent, Ryan Tibshirani](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/prox-grad.pdf)
+
+[A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems, Amir Beck and Marc Teboulle](ttps://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/FISTA_Breck_2009.pdf)
+
+## 熵与交叉熵
+
+- 自信息
+- 熵
+- 交叉熵
+- K-L 散度(一种距离表示)
+- 交叉熵损失
+
+课堂笔记：[熵与交叉熵.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/entropy.pdf)
+
+## 决策树
+
+- 决策树模型与学习
+- 特征选择
+- 决策树的生成
+  - ID3算法
+  - C4.5算法
+- 决策树的剪枝
+- CART算法
+
+课堂笔记：[决策树.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/Classification_decision_tree.pdf)
+
+## 提升方法（Boosting）
+
+- 提升方法与 AdaBoost 算法
+  - AdaBoost 算法
+  - AdaBoost 的训练误差分析
+  - AdaBoost 算法的解读
+
+- 提升树
+  - 提升树模型
+  - 梯度提升
+- 指数损失下总体的最优估计推导
+
+课堂笔记：
+
+[Boosting.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/Classification_Boosting.pdf)
+
+[指数损失下总体的最优估计.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/LossFunc.pdf)
+
+## GBDT, XGBoost, LightGBM
+
+- 前向分步算法
+- GBDT
+- XGBoost (Extreme Gradient Boosting)
+- LightGBM (理解)
+
+课堂笔记：[其他一些boosting算法.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/GradientMethod.pdf)
+
+## 神经网络：反向传播算法
+
+- 神经网络基础（参考[2019秋季DMC报告](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/DMC/2019_Nov_neural_network_basis_DMC.pdf)）
+- 反向传播算法的推导
+
+课堂笔记：[反向传播算法.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/BP_algs.pdf)
+
+## 聚类方法
+
+- 聚类的基本概念
+- 层次聚类
+- k 均值聚类
+- 高斯混合模型 (Gaussian Mixture Model)
+  - EM算法
+
+课堂笔记：[聚类方法.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/clustering.pdf)
+
+## 其他
+
+参考资料：[SMO算法.pdf](https://github.com/MelodyRen1998/MelodyRen1998.github.io/raw/master/files/lec_notes/2020fall/SMO.pdf)
+
