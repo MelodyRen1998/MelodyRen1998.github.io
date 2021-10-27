@@ -11,8 +11,7 @@ tags:
   - sql-server
 ---
 
-**参考链接**
-
+主要参考资料：
   - [Quickstart: Install SQL Server and create a database on Ubuntu](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15)
   - [Install tools on Ubuntu 16.04](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-setup-tools?view=sql-server-ver15#ubuntu)
   - [Install Microsoft SQL Server 2019 on Ubuntu 20.04/18.04/16.04 LTS](https://computingforgeeks.com/how-to-install-ms-sql-on-ubuntu/)
