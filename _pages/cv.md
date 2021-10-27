@@ -7,9 +7,7 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
-
-You may my CV here.
+You may my CV [here](/files/CV_YIMENG_1027.pdf).
 
 ## Contact
 
