@@ -1,16 +1,15 @@
 ---
-layout: archive
-title: "Publications"
-permalink: /publications/publications.md
+permalink: /
 author_profile: true
+redirect_from: 
+  - /publications.html
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
+- **Ren, Y.**, Zhu, X., & Hu, G. (2021). Graphical Assistant Grouped Network Autoregression Model: a Bayesian Nonparametric Recourse. arXiv preprint arXiv:2110.04991.
 
-{% include base_path %}
+- Xue, B., He, Y., Jing, F., **Ren, Y.**, Jiao, L., & Huang, Y. (2021). Robot target recognition using deep federated learning. International Journal of Intelligent Systems.
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+- Xue, B., He, Y., Jing, F., **Ren, Y.**, & Gao, M. (2021). Dynamic coarse‐to‐fine ISAR image blind denoising using active joint prior learning. International Journal of Intelligent Systems.
+
+- 张哲, **任怡萌**, 董会娟. 城市碳排放达峰和低碳发展研究:以上海市为例[J]. 环境工程, 2020, 38(11):12-18.
+
