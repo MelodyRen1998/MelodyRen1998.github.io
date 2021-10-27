@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-You may my CV [here](/files/CV_YIMENG_1027.pdf).
+You may find my CV [here](/files/CV_YIMENG_1027.pdf).
 
 ## Contact
 
