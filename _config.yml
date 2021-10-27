@@ -147,7 +147,9 @@ exclude:
   - tmp
   - vendor
   - _pages/portfolio.md
+  - _pages/portfolio.html
   - _pages/teaching.md
+  - _pages/teaching.html
 keep_files:
   - .git
   - .svn
