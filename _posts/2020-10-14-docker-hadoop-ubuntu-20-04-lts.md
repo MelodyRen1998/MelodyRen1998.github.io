@@ -10,13 +10,10 @@ tags:
   - hadoop
 ---
 
-**参考链接**：
-
-[docker环境下搭建hadoop集群(ubuntu16.04 LTS系统)](https://blog.csdn.net/weixin_42051109/article/details/82744993)
-
-[Spark分布式搭建（2）——ubuntu14.04下修改hostname和hosts](https://blog.csdn.net/xummgg/article/details/50634327)
-
-[hadoop 集群子节点不启动 spark-slave1: ssh: Could not resolve hostname spark-slave1: Name or service not known](https://www.cnblogs.com/yangchas/p/10469393.html)
+主要参考资料：
+- [docker环境下搭建hadoop集群(ubuntu16.04 LTS系统)](https://blog.csdn.net/weixin_42051109/article/details/82744993)
+- [Spark分布式搭建（2）——ubuntu14.04下修改hostname和hosts](https://blog.csdn.net/xummgg/article/details/50634327)
+- [hadoop 集群子节点不启动 spark-slave1: ssh: Could not resolve hostname spark-slave1: Name or service not known](https://www.cnblogs.com/yangchas/p/10469393.html)
 
 **主要步骤**：
 
