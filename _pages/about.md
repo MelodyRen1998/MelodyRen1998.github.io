@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Work Hard Play Harder"
+title: "About Me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-## About Me
+![](../images/profile.jpg)
 
 I am currently a graduate student in [School of Statistics](http://stat.ruc.edu.cn/), Renmin University of China, under the advised of [Prof. Xiaoling Lu](http://stat.ruc.edu.cn/teacher_more.php?id=39&cid=25). I obtained my Bachelor’s Degree in Economics from School of Statistics, Renmin University of China. My research interest lies in Network Analysis, Graph Neural Network and Statistical Modelling.
 
