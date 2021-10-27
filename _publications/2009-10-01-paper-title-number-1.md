@@ -1,15 +1,13 @@
 ---
-title: "Paper Title Number 1"
+title: "Publicated Works"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
-This paper is about the number 1. The number 2 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+- **Ren, Y.**, Zhu, X., & Hu, G. (2021). Graphical Assistant Grouped Network Autoregression Model: a Bayesian Nonparametric Recourse. arXiv preprint arXiv:2110.04991.
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+- Xue, B., He, Y., Jing, F., **Ren, Y.**, Jiao, L., & Huang, Y. (2021). Robot target recognition using deep federated learning. International Journal of Intelligent Systems.
+
+- Xue, B., He, Y., Jing, F., **Ren, Y.**, & Gao, M. (2021). Dynamic coarse‐to‐fine ISAR image blind denoising using active joint prior learning. International Journal of Intelligent Systems.
+
+- 张哲, **任怡萌**, 董会娟. 城市碳排放达峰和低碳发展研究:以上海市为例[J]. 环境工程, 2020, 38(11):12-18.
+
