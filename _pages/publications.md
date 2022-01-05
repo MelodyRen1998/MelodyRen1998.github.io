@@ -18,3 +18,7 @@ redirect_from:
 ## Books
 
 - 朱雪宁, **任怡萌**, 米汶权, 张桂维 (2021). [统计分析（以R语言为工具）](https://item.jd.com/13422394.html). [Code & Data](https://xueningzhu.github.io/Statistical-Analysis-with-R/index.html)
+
+## Articles
+
+- 卞梦凡，高钰婷，郝影，**任怡萌**（2021），国家温室气体清单编制原则与当前实务，《中国统计》2021年第12期.
