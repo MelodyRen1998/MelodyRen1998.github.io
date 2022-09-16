@@ -11,4 +11,4 @@ You may find my CV [here](/files/CV_YIMENG_1027.pdf).
 
 ## Contact
 
-Email: renyimeng[at]ruc[dot]edu[dot]cn
+Email: ymren22[at]m[dot]fudan[dot]edu[dot]cn
