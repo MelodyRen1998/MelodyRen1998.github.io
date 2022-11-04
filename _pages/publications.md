@@ -7,7 +7,9 @@ redirect_from:
 
 ## Publications
 
-- **Ren, Y.**, Zhu, X., & Hu, G. (2021). [Graphical Assistant Grouped Network Autoregression Model: a Bayesian Nonparametric Recourse](https://arxiv.org/abs/2110.04991). arXiv preprint arXiv:2110.04991.
+- **Ren, Y.**, Li, Z., Zhu, X., Gao, Y., & Wang, H. (2022). [Distributed Estimation and Inference for Spatial Autoregression Model with Large Scale Networks](https://arxiv.org/abs/2210.16634). arXiv preprint arXiv:2210.16634.
+
+- **Ren, Y.**, Zhu, X., & Hu, G. (2021). [Graphical Assistant Grouped Network Autoregression Model: a Bayesian Nonparametric Recourse](https://www.tandfonline.com/doi/full/10.1080/07350015.2022.2143784). Journal of Business & Economic Statistics, online.
 
 - Xue, B., He, Y., Jing, F., **Ren, Y.**, Jiao, L., & Huang, Y. (2021). [Robot target recognition using deep federated learning](https://onlinelibrary.wiley.com/doi/abs/10.1002/int.22606). International Journal of Intelligent Systems.
 
