@@ -26,4 +26,4 @@ I am currently a PhD student in [School of Data Science](https://sds.fudan.edu.c
 
 ## Others
 
-You may find something interesting (nothing to do with academy) at [Bilibili](https://space.bilibili.com/66081758), where I upload some videos to vlog my life. If you would like to go city cycling, I’m surely to join.
+You may find something interesting at [Bilibili](https://space.bilibili.com/66081758), where I upload some videos to vlog my life. I also enjoy capture the highlight moments via my phone, see my [e-photo album](https://www.flickr.com/photos/199162429@N08/) here! Workouts and sports are indeed key elements to build me, anything like cycling, body combat, frisbee, swimming, ...(cannot list all since I love anything :P) I'd like to join!
