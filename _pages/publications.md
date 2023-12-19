@@ -7,7 +7,7 @@ redirect_from:
 
 ## Publications
 
-- **Ren, Y.**, Li, Z., Zhu, X., Gao, Y., & Wang, H. (2023). [Distributed Estimation and Inference for Spatial Autoregression Model with Large Scale Networks](https://arxiv.org/abs/2210.16634). Journal of Economics, accepted. (Co-first author with Zhe Li)
+- **Ren, Y.**, Li, Z., Zhu, X., Gao, Y., & Wang, H. (2023). [Distributed Estimation and Inference for Spatial Autoregression Model with Large Scale Networks](https://arxiv.org/abs/2210.16634). Journal of Econometrics, accepted. (Co-first author with Zhe Li)
 
 - **Ren, Y.**, Zhu, X., & Hu, G. (2021). [Graphical Assistant Grouped Network Autoregression Model: a Bayesian Nonparametric Recourse](https://www.tandfonline.com/doi/full/10.1080/07350015.2022.2143784). Journal of Business & Economic Statistics, online.
 
