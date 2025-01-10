@@ -10,7 +10,7 @@ redirect_from:
 
 ![](../images/profile.jpg)
 
-I am currently a PhD student in [School of Data Science](https://sds.fudan.edu.cn/), Fudan University, under the advised of [Prof. Xuening Zhu](https://xueningzhu.github.io/). I obtained my Bachelor’s Degree in Economics and Master's Degree in Applied Statistics from School of Statistics, Renmin University of China. My research interest lies in **Network Analysis**, **High-dimensional Statistics**, and **Graph Neural Network**.
+I am currently a final-year PhD student in [School of Data Science](https://sds.fudan.edu.cn/) at [Fudan University](https://www.fudan.edu.cn/), under the advised of [Prof. Xuening Zhu](https://xueningzhu.github.io/). I obtained my Bachelor’s Degree in Economics and Master's Degree in Applied Statistics from [School of Statistics](http://stat.ruc.edu.cn/) at [Renmin University of China](https://www.ruc.edu.cn/). My research interest lies in **Network Analysis**, **High-dimensional Statistics**, **Spatial Econometrics**, and **Statistical Machine Learning**.
 
 
 ## Education 
@@ -22,8 +22,9 @@ I am currently a PhD student in [School of Data Science](https://sds.fudan.edu.c
 
 - Network Data Analysis
 - High-dimensional Statistics
-- Graph Neural Network
+- Spatial Econometrics
+- Statistical Machine Learning
 
 ## Others
 
-You may find something interesting at [Bilibili](https://space.bilibili.com/66081758), where I upload some videos to vlog my life. I also enjoy capture the highlight moments via my phone, see my [e-photo album](https://www.flickr.com/photos/199162429@N08/) here! Workouts and sports are indeed key elements to build me, anything like cycling, body combat, frisbee, swimming, ...(cannot list all since I love anything :P) I'd like to join!
+I enjoy capture the highlight moments, see my [e-photo album](https://www.flickr.com/photos/199162429@N08/) here!
