@@ -8,6 +8,8 @@ redirect_from:
 
 ## Publications
 
+- Meng, J.#, **Ren, Y.**#, Zhu, X., & Hu, G. (2025). [Spatially Clustered Compositional Regression: A Nonparametric Bayesian Approach](https://arxiv.org/abs/2405.07408). _Journal of Computational and Graphical Statistics_. (# Co-first author)
+
 - **Ren, Y.**#, Li, Z.#, Zhu, X., Gao, Y., & Wang, H. (2024). [Distributed Estimation and Inference for Spatial Autoregression Model with Large Scale Networks](https://www.sciencedirect.com/science/article/pii/S0304407623003457). _Journal of Econometrics_, 238(2), 105629. (# Co-first author)
 
 - **Ren, Y.**, Zhu, X., & Hu, G. (2024). [Graphical Assistant Grouped Network Autoregression Model: a Bayesian Nonparametric Recourse](https://www.tandfonline.com/doi/full/10.1080/07350015.2022.2143784). _Journal of Business & Economic Statistics_, 42(1), 49-63.
@@ -24,8 +26,6 @@ redirect_from:
 ## Preprint
 
 - **Ren, Y.**, Zhu, X., Xu, G., & Ma, Y. (2024). [Multi-relational Network Autoregression Model with Latent Group Structures](https://arxiv.org/abs/2406.03296). _arXiv preprint arXiv:2406.03296_.
-
-- Meng, J.#, **Ren, Y.**#, Zhu, X., & Hu, G. (2024). [Bayesian Spatially Clustered Compositional Regression: Linking intersectoral GDP contributions to Gini Coefficients](https://arxiv.org/abs/2405.07408). _arXiv preprint arXiv:2405.07408_. (# Co-first author)
 
 
 ## Books
