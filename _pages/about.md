@@ -10,7 +10,9 @@ redirect_from:
 
 
 
-I am currently a final-year PhD student in [School of Data Science](https://sds.fudan.edu.cn/) at [Fudan University](https://www.fudan.edu.cn/), under the advised of [Prof. Xuening Zhu](https://xueningzhu.github.io/). I obtained my Bachelor’s Degree in Economics and Master's Degree in Applied Statistics from [School of Statistics](http://stat.ruc.edu.cn/) at [Renmin University of China](https://www.ruc.edu.cn/). My research interest lies in **Network Analysis**, **High-dimensional Statistics**, **Spatial Econometrics**, and **Statistical Machine Learning**.
+I am currently a final-year PhD student in [School of Data Science](https://sds.fudan.edu.cn/) at [Fudan University](https://www.fudan.edu.cn/), under the supervision of [Prof. Xuening Zhu](https://xueningzhu.github.io/). 
+I obtained my Bachelor’s Degree in Economics and Master's Degree in Applied Statistics from [School of Statistics](http://stat.ruc.edu.cn/) at [Renmin University of China](https://www.ruc.edu.cn/). 
+My research interest lies in **Network Analysis**, **High-dimensional Statistics**, **Spatial Econometrics**, and **Statistical Machine Learning**.
 
 
 ## Education 
@@ -24,6 +26,12 @@ I am currently a final-year PhD student in [School of Data Science](https://sds.
 - High-dimensional Statistics
 - Spatial Econometrics
 - Statistical Machine Learning
+
+## ✨News!
+
+- Present our recent work ``Multi-relational Network Autoregression Model with Latent Group Structures'' at [SETA 2025](https://fba.um.edu.mo/seta2025/), Macau, China.
+- 
+
 
 ## Others
 

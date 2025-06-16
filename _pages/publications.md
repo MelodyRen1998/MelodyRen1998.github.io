@@ -6,8 +6,6 @@ redirect_from:
 ---
 
 
-## Research
-
 - Meng, J.#, **Ren, Y.**#, Zhu, X., & Hu, G. (2025). [Spatially Clustered Compositional Regression: A Nonparametric Bayesian Approach](https://www.tandfonline.com/doi/abs/10.1080/10618600.2025.2500978). _Journal of Computational and Graphical Statistics_, online. (# Co-first author)
 
 
