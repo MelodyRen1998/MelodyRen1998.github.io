@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-![](../images/profile.jpg)
+
 
 I am currently a final-year PhD student in [School of Data Science](https://sds.fudan.edu.cn/) at [Fudan University](https://www.fudan.edu.cn/), under the advised of [Prof. Xuening Zhu](https://xueningzhu.github.io/). I obtained my Bachelor’s Degree in Economics and Master's Degree in Applied Statistics from [School of Statistics](http://stat.ruc.edu.cn/) at [Renmin University of China](https://www.ruc.edu.cn/). My research interest lies in **Network Analysis**, **High-dimensional Statistics**, **Spatial Econometrics**, and **Statistical Machine Learning**.
 

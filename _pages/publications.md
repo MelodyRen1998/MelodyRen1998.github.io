@@ -6,13 +6,24 @@ redirect_from:
 ---
 
 
-## Publications
+## Research
 
-- Meng, J.#, **Ren, Y.**#, Zhu, X., & Hu, G. (2025). [Spatially Clustered Compositional Regression: A Nonparametric Bayesian Approach](https://arxiv.org/abs/2405.07408). _Journal of Computational and Graphical Statistics_. (# Co-first author)
+- Meng, J.#, **Ren, Y.**#, Zhu, X., & Hu, G. (2025). [Spatially Clustered Compositional Regression: A Nonparametric Bayesian Approach](https://www.tandfonline.com/doi/abs/10.1080/10618600.2025.2500978). _Journal of Computational and Graphical Statistics_, online. (# Co-first author)
+
+
+> **Abstract:** The analysis of compositional data often requires methods that account for the relative nature of its components while also exploring spatial heterogeneity. In this paper, a compositional regression with spatially clustered coefficients is proposed to assess the varying importance of compositional predictors across spatial locations within a nonparametric Bayesian framework. Specifically, a Markov random field constraint with a mixture of finite mixtures prior is developed for Bayesian log contrast regression with compositional covariates, allowing for the identification of both spatially contiguous and discontinuous clusters. Furthermore, an efficient Markov chain Monte Carlo algorithm is introduced for posterior sampling, enabling simultaneous inference on both cluster configurations and cluster-wise parameters. The proposed method’s performance is validated through extensive simulation studies and an application to compositional data from the 2019 Bureau of Economic Analysis for the 50 states and Washington DC of the United States.
+
 
 - **Ren, Y.**#, Li, Z.#, Zhu, X., Gao, Y., & Wang, H. (2024). [Distributed Estimation and Inference for Spatial Autoregression Model with Large Scale Networks](https://www.sciencedirect.com/science/article/pii/S0304407623003457). _Journal of Econometrics_, 238(2), 105629. (# Co-first author)
 
+
+> **Abstract:** The rapid growth of online network platforms generates large-scale network data and it poses great challenges for statistical analysis using the spatial autoregression (SAR) model. In this work, we develop a novel distributed estimation and statistical inference framework for the SAR model on a distributed system. We first propose a distributed network least squares approximation (DNLSA) method. This enables us to obtain a one-step estimator by taking a weighted average of local estimators on each worker. Afterwards, a refined two-step estimation is designed to further reduce the estimation bias. For statistical inference, we utilize a random projection method to reduce the expensive communication cost. Theoretically, we show the consistency and asymptotic normality of both the one-step and two-step estimators. In addition, we provide theoretical guarantee of the distributed statistical inference procedure. The theoretical findings and computational advantages are validated by several numerical simulations implemented on the Spark system. Lastly, an experiment on the Yelp dataset further illustrates the usefulness of the proposed methodology.
+ 
+ 
 - **Ren, Y.**, Zhu, X., & Hu, G. (2024). [Graphical Assistant Grouped Network Autoregression Model: a Bayesian Nonparametric Recourse](https://www.tandfonline.com/doi/full/10.1080/07350015.2022.2143784). _Journal of Business & Economic Statistics_, 42(1), 49-63.
+
+> **Abstract:** Vector autoregression model is ubiquitous in classical time series data analysis. With the rapid advance of social network sites, time series data over latent graph is becoming increasingly popular. In this article, we develop a novel Bayesian grouped network autoregression model, which can simultaneously estimate group information (number of groups and group configurations) and group-wise parameters. Specifically, a graphically assisted Chinese restaurant process is incorporated under the framework of the network autoregression model to improve the statistical inference performance. An efficient Markov chain Monte Carlo sampling algorithm is used to sample from the posterior distribution. Extensive studies are conducted to evaluate the finite sample performance of our proposed methodology. Additionally, we analyze two real datasets as illustrations of the effectiveness of our approach.
+
 
 - Xue, B., He, Y., Jing, F., **Ren, Y.**, Jiao, L., & Huang, Y. (2021). [Robot target recognition using deep federated learning](https://onlinelibrary.wiley.com/doi/abs/10.1002/int.22606). _International Journal of Intelligent Systems_, 36(12), 7754-7769.
 
