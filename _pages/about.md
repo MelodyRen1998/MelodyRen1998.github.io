@@ -15,12 +15,12 @@ I obtained my Bachelor’s Degree in Economics and Master's Degree in Applied St
 My research interest lies in **Network Analysis**, **High-dimensional Statistics**, **Spatial Econometrics**, and **Statistical Machine Learning**.
 
 
-## Education 
+## 🏛️Education 
 
 - 2020--2022, M.S. in Appied Statistics, School of Statistics, Renmin University of China.
 - 2016--2020, B.S. in Economics (Economic Statistics), School of Statistics, Renmin University of China.
 
-## Research Interests
+## 📚Research Interests
 
 - Network Data Analysis
 - High-dimensional Statistics
@@ -29,10 +29,9 @@ My research interest lies in **Network Analysis**, **High-dimensional Statistics
 
 ## ✨News!
 
-- Present our recent work ``Multi-relational Network Autoregression Model with Latent Group Structures'' at [SETA 2025](https://fba.um.edu.mo/seta2025/), Macau, China.
-- 
+- Present our recent work _Multi-relational Network Autoregression Model with Latent Group Structures_ at [SETA 2025](https://fba.um.edu.mo/seta2025/), Macau, China.
 
 
-## Others
+## 🗺️Others
 
-I enjoy capture the highlight moments, see my [e-photo album](https://www.flickr.com/photos/199162429@N08/) here!
+Capturing the highlight moments in my life, see my [e-photo album](https://www.flickr.com/photos/199162429@N08/) here!
