@@ -81,12 +81,12 @@ analytics:
 author:
   name             : "Yimeng Ren (任怡萌)"
   avatar           : "yimeng.jpg"
-  bio              : "PhD Candidate in Statistics"
-  location         : "Shanghai, China"
+  bio              : "PhD in Economics"
+  location         : "Hong Kong, China"
   employer         :
 #   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=yvQvsHcAAAAJ&hl=en"
-  email            : "ymren22@m.fudan.edu.cn"
+  email            : "ymren@ust.hk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :  
   bitbucket        :
