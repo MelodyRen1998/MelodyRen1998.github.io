@@ -8,4 +8,4 @@ redirect_from:
 ---
 
 
-Email: ymren22[at]m[dot]fudan[dot]edu[dot]cn
+Email: ymren[at]ust[dot]hk

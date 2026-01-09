@@ -9,27 +9,33 @@ redirect_from:
 ---
 
 
+I will soon join Hong Kong University of Science and Technology, [Department of ISOM](https://isom.hkust.edu.hk/) as a Postdoctoral Fellow, and I am honored to work with Prof. [Yingying Li](https://yyli.people.ust.hk/). 
+I received my Ph.D. degree in Economics (Statistics) from Fudan University, [School of Data Science](https://sds.fudan.edu.cn/), 
+where I was fortunate to be advised by Prof. [Xuening Zhu](https://xueningzhu.github.io/). 
+Prior to that, I earned my B.S. and M.S. degrees from Renmin University of China, [School of Statistics](http://stat.ruc.edu.cn/).
 
-I am currently a final-year PhD student in [School of Data Science](https://sds.fudan.edu.cn/) at [Fudan University](https://www.fudan.edu.cn/), under the supervision of [Prof. Xuening Zhu](https://xueningzhu.github.io/). 
-I obtained my Bachelor’s Degree in Economics and Master's Degree in Applied Statistics from [School of Statistics](http://stat.ruc.edu.cn/) at [Renmin University of China](https://www.ruc.edu.cn/). 
-My research interest lies in **Network Analysis**, **High-dimensional Statistics**, **Spatial Econometrics**, and **Statistical Machine Learning**.
+Currently, I focus on investigating more **general heterogeneity modeling** in social and financial data. 
+I aim to develop and apply statistical modeling tools to better characterize these dependent and complex systems, 
+with the goal of proposing more general and broadly applicable statistical methods.
 
 
 ## 🏛️Education 
 
-- 2020--2022, M.S. in Appied Statistics, School of Statistics, Renmin University of China.
-- 2016--2020, B.S. in Economics (Economic Statistics), School of Statistics, Renmin University of China.
+- 2022--2025, Doctor in Economics (Statistics), School of Data Science, Fudan University.
+- 2020--2022, Master in Appied Statistics, School of Statistics, Renmin University of China.
+- 2016--2020, Bachelor in Economics (Economic Statistics), School of Statistics, Renmin University of China.
 
 ## 📚Research Interests
 
-- Network Data Analysis
-- High-dimensional Statistics
+- Data Heterogeneity
+- Network Dependence Analysis
 - Spatial Econometrics
 - Statistical Machine Learning
 
 ## ✨News!
 
-- Present our recent work _Multi-relational Network Autoregression Model with Latent Group Structures_ at [SETA 2025](https://fba.um.edu.mo/seta2025/), Macau, China.
+
+- In June 2025, I presented our recent work _Multi-relational Network Autoregression Model with Latent Group Structures_ at [SETA 2025](https://fba.um.edu.mo/seta2025/), Macau, China.
 
 
 ## 🗺️Others

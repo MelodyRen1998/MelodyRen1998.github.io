@@ -34,6 +34,7 @@ redirect_from:
 
 - 张哲, **任怡萌**, 董会娟. [城市碳排放达峰和低碳发展研究:以上海市为例](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2021&filename=HJGC202011003&uniplatform=NZKPT&v=2bqQIWLHfC6qR6OGSmJodziK1kZ7rsMjSd7X4MmYNujFeiHm0u5ia0T58UCR%25mmd2BpbU). _环境工程_, 2020, 38(11):12-18.
 
+
 ## Working Papers
 
 - **Ren, Y.**, Zhu, X., Xu, G., & Ma, Y. (2024). [Multi-relational Network Autoregression Model with Latent Group Structures](https://arxiv.org/abs/2406.03296). _arXiv preprint arXiv:2406.03296_.
