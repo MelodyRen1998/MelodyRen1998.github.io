@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-I will soon join Hong Kong University of Science and Technology, [Department of ISOM](https://isom.hkust.edu.hk/) as a Postdoctoral Fellow, and I am honored to work with Prof. [Yingying Li](https://yyli.people.ust.hk/). 
+Welcome to my website! I am currently a Postdoctoral Fellow at Hong Kong University of Science and Technology, [Department of ISOM](https://isom.hkust.edu.hk/), and I am honored to work with Prof. [Yingying Li](https://yyli.people.ust.hk/). 
 I received my Ph.D. degree in Economics (Statistics) from Fudan University, [School of Data Science](https://sds.fudan.edu.cn/), 
 where I was fortunate to be advised by Prof. [Xuening Zhu](https://xueningzhu.github.io/). 
 Prior to that, I earned my B.S. and M.S. degrees from Renmin University of China, [School of Statistics](http://stat.ruc.edu.cn/).
