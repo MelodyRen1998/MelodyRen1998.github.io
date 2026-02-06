@@ -9,9 +9,9 @@ redirect_from:
 ---
 
 
-Welcome to my website! I am currently a Postdoctoral Fellow at Hong Kong University of Science and Technology, [Department of ISOM](https://isom.hkust.edu.hk/), and I am honored to work with Prof. [Yingying Li](https://yyli.people.ust.hk/). 
+Welcome to my website! I am currently a Postdoctoral Fellow of the [FinStaR](https://finstar.hkust.edu.hk/) Team at Hong Kong University of Science and Technology, [Department of ISOM](https://isom.hkust.edu.hk/), where I am deeply honored to work with Prof. [Yingying Li](https://yyli.people.ust.hk/) and Prof. [Xinghua Zheng](https://xhzheng.people.ust.hk/). 
 I received my Ph.D. degree in Economics (Statistics) from Fudan University, [School of Data Science](https://sds.fudan.edu.cn/), 
-where I was fortunate to be advised by Prof. [Xuening Zhu](https://xueningzhu.github.io/). 
+and I was truly fortunate to be advised by Prof. [Xuening Zhu](https://xueningzhu.github.io/). 
 Prior to that, I earned my B.S. and M.S. degrees from Renmin University of China, [School of Statistics](http://stat.ruc.edu.cn/).
 
 Currently, I focus on investigating more **general heterogeneity modeling** in social and financial data. 
