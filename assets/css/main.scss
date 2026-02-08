@@ -51,3 +51,15 @@ body {
     font-family: "Times New Roman", "Academicons";  
     font-size: 18px;
 }
+/* ---- text justify for main content ---- */
+.page__content p,
+.page__content li {
+  text-align: justify;
+  text-align-last: left;      /* 最后一行别被拉伸 */
+}
+
+/* 中英文混排/长英文单词换行更自然（可选但推荐） */
+.page__content {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
